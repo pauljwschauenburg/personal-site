@@ -1,3 +1,31 @@
 baseURL = "https://colemanhaley.com/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+
+# MENU CONTENTS
+[menu]
+	[[menu.main]]
+		identifier ="homepage"
+		name = "C. Haley"
+		url = "/"
+		weight = 2
+		[menu.main.params]
+			activename = "Home"
+	[[menu.main]]
+		identifier ="publications"
+		name = "Publications"
+		url = "/publications/"
+		weight = 2
+	[[menu.main]]
+		identifier ="blog"
+		name = "Blog"
+		url = "/blog/"
+		weight = 3
+	[[menu.main]]
+		name = "Twitter"
+		url = "https://twitter.com/ColemanHaley22"
+		weight = 4
+	[[menu.main]]
+		name = "Github"
+		url = "https://github.com/ColemanHaley"
+		weight = 5

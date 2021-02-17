@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7YWD891Z8X"></script>
+<head> <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YWD891Z8X"></script>
 
 			<script>
 
@@ -35,11 +34,11 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 
 	<meta name="theme-color" content="#ffffff">
-<style>
- nav > a:nth-of-type({{.page}}) {
-	 text-decoration: line-through;
-}
-</style>
+<!-- <style> -->
+<!--  nav > a:nth-of-type(.page) { -->
+<!-- 	 text-decoration: line-through; -->
+<!-- } -->
+<!-- </style> -->
 	<title>Coleman Haley</title>
 </head>
 <body>
@@ -55,12 +54,22 @@
 		</button>
 		</div>
 	<nav>
-		<a href="/">{{cond (eq .page 1) "Home" "C. Haley"}}</a>
-		<a href="/publications/">Publications</a>
-		<a href="/documents/coleman_cv.pdf">Curriculum Vitae</a>
-		<a href="/blog/">Blog</a>
-		<a href="https://twitter.com/22cristobal22">Twitter</a>
-		<a href="https://github.com/ColemanHaley">Github</a>
+		<!-- <a href="/"><span>{{cond (eq .Site 1) "Home" "C. Haley"}}</span></a> -->
+		{{ $currentPage := . }}
+		{{ range .Site.Menus.main }}
+			<a href="{{ .URL }}" 
+			   {{ if or ($currentPage.IsMenuCurrent "main" .) }}
+				   class="active"
+			   {{ end }}
+			>
+			<span class="menu-text">{{cond (and ($currentPage.IsMenuCurrent "main" .) (isset .Params "activename")) .Params.activename .Name }}</span>
+			</a>
+		{{ end }}
+		<!-- <a href="/publications/"><span>Publications</span></a> -->
+		<!-- <a href="/documents/coleman_cv.pdf"><span>Curriculum Vitae</span></a> -->
+		<!-- <a href="/blog/"><span>Blog</span></a> -->
+		<!-- <a href="https://twitter.com/ColemanHaley22"><span>Twitter</span></a> -->
+		<!-- <a href="https://github.com/ColemanHaley"><span>Github</span></a> -->
 	</nav>
 	</div>
 	<div id="body">
