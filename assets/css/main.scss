@@ -1,5 +1,6 @@
 $hamburger-layer-border-radius : 0px;
 @import "./hamburgers/hamburgers/hamburgers.scss";
+@import "responsive.scss";
 body, html {
   background-color: #F7E7EC;
   height: 100%;
@@ -7,31 +8,8 @@ body, html {
   box-sizing: border-box;
 }
 
-@mixin lg {
-  @media (min-width: 1070px) {
-    @content
-  }
-}
-
-@mixin xl {
-  @media (min-width: 1200px) {
-    @content
-  }
-}
-@mixin sm {
-  @media (max-width: 1070px) {
-    @content
-  }
-}
-@mixin md {
-  @media (max-width: 700px) {
-    @content
-  }
-}
-@mixin xs {
-  @media (max-width: 460px) {
-    @content
-  }
+span.theauthor {
+  font-weight: bold;
 }
 .nav {
   .burger, .logo {
@@ -39,7 +17,10 @@ body, html {
     width: 0;
     height: 0;
   }
-  @include md {
+  .burger {
+    padding-top: 6px;
+  }
+  @include sm {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
@@ -73,7 +54,7 @@ body, html {
 
   }
   &.active {
-    @include md {
+    @include sm {
     position: fixed;
     height: 100%;
     width: 100%;
@@ -117,6 +98,8 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     max-height: 95%;
+    max-width: 100%;
+    justify-content: center;
   }
   display: flex;
   align-items: center;
@@ -168,7 +151,7 @@ p {
   img {
     height: 100%;
   }
-  @include sm {
+  @include md {
     flex: 1 1 auto;
     padding-bottom: 2rem;
   }
@@ -186,7 +169,7 @@ p {
   #bio-text {
     height: fit-content;
   }
-  @include sm {
+  @include md {
     padding: 0 0.5rem;
   }
   @include lg {
@@ -285,6 +268,6 @@ nav {
   }
 }
 
-.active {
+nav > a.active {
   text-decoration: line-through;
 }

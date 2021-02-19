@@ -1,0 +1,7 @@
+<h2>{{ $.Params.title }}</h2>
+<h4>{{ partial "author-list" . | chomp }}. {{ $.Params.prevenue }} <span class="venue">{{ $.Params.venue }}</span>.</h4>
+<ul class="links">
+{{ range .Params.links }}
+  <li><a href="{{ .url | absURL }}">[{{ .text }}]</a></li>
+{{ end }}
+</ul>

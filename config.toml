@@ -2,6 +2,10 @@ baseURL = "https://colemanhaley.com/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 
+[params]
+	cutoff = 30
+	author = "Coleman Haley"
+
 # MENU CONTENTS
 [menu]
 	[[menu.main]]
@@ -17,10 +21,14 @@ title = "My New Hugo Site"
 		url = "/publications/"
 		weight = 2
 	[[menu.main]]
+		name = "Curriculum Vitae"
+		url = "/documents/coleman_cv.pdf"
+		weight = 3
+	[[menu.main]]
 		identifier ="blog"
 		name = "Blog"
 		url = "/blog/"
-		weight = 3
+		weight = 4
 	[[menu.main]]
 		name = "Twitter"
 		url = "https://twitter.com/ColemanHaley22"

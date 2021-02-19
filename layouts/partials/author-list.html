@@ -1,0 +1,25 @@
+
+{{- $cutoff := .Site.Params.cutoff | default 3 -}}
+{{- $author := .Site.Params.author -}}
+{{- $raw_names := $.Params.author -}}
+{{- $name_type := "author" -}}
+{{- $names :=  apply (apply $raw_names "partial" "author" ".") "chomp" "." -}}
+{{- if and (gt $cutoff 0) (gt (len $names) $cutoff) -}}
+  <span itemprop="{{ $name_type }}">{{- index $names 0 }}</span> <i>et al</i>.
+{{- else -}}
+  {{- $name_ct := len $names -}}
+  {{- range $i, $n := $names -}}
+  {{ $classes := "" }} 
+  {{- if (eq $n $author) -}}
+    {{ $classes = "theauthor" }}
+  {{- end -}}
+    <span itemprop="{{ $name_type }}" class=" {{ $classes }}">{{ $n }}</span>
+  {{- if lt $i (sub $name_ct 2) }},
+  {{ else -}}
+    {{- if eq $i (sub $name_ct 2) -}}
+      {{- if gt $name_ct 2 }},{{ end }}
+      &amp;
+      {{ end -}}
+    {{- end }}
+  {{- end -}}
+{{- end -}}
