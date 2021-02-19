@@ -1,13 +1,12 @@
-{{ partial "head.html" . }}
+{{ define "styles" }}
+    {{ $style := resources.Get "css/home.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ end }}
+{{ define "main" }}
 <div class="headshot"><img  src="/img/headshot2020.jpg" alt="Headshot of Coleman"></div>
 	<div id="bio">
 		<div id="bio-text">
-		<h2>Coleman Haley</h2>
-			<p>I am a recent graduate of the Johns Hopkins University (B.S. Computer Science + Cognitive Science). I work with Dr. Paul Smolensky and Dr. Colin Wilson on morphology, low-resource NLP, and neuro-symbolic computation.</p>
-			<p>Currently, I am working as a contractor at Microsoft Research, where I am developing machine translation models for morphologically rich languages.</p>
-			<p>I’m excited by solving problems for low-resource, typologically diverse languages in NLP, particularly by incorporating structure and/or linguistic information.</p>
-			<p>In my spare time, I enjoy advocating for the inclusion of LGBTQ+ people in STEM, baking, and early music.</p>
+		{{ .Content }}
 		</div>
 	</div>
-{{ partial "foot.html" . }}
-
+{{ end }}

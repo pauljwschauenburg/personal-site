@@ -8,8 +8,8 @@ pubdate: '2021-02-01'
 title: 'Deep neural networks easily learn unnatural infixation and reduplication patterns'
 venue: SCIL 2021
 links:
- - text: paper
+ - text: Paper
    url: https://scholarworks.umass.edu/scil/vol4/iss1/52/
- - text: poster
+ - text: Poster
    url: /documents/haley-wilson-2021-unnatural-poster.pdf
 ---

@@ -1,4 +1,8 @@
-{{ partial "head.html" . }}
+{{ define "styles" }}
+{{ $style := resources.Get "css/publications.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ end }}
+{{ define "main" }}
 <div>
 	{{ range (where .Data.Pages "Params.publication" "!=" "").GroupByDate "2006" "desc" }}
 	<h2 class="year">{{ .Key }}</h2>
@@ -9,7 +13,7 @@
 		</ul>
 	{{end}}
 </div>
+{{ end }}
 
 
 
-{{ partial "foot.html" . }}

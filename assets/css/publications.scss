@@ -1,0 +1,35 @@
+@import "list.scss";
+span.theauthor {
+  font-weight: bold;
+}
+h2.year {
+  font-style: normal;
+}
+
+span.venue {
+  font-style: italic;
+}
+ul.publications {
+  li {
+    display: block;
+    margin-bottom: 15px;
+  }
+  h4 {
+    margin: 0;
+  }
+}
+ul.links {
+  padding-left: 0;
+  li {
+    display: inline;
+    margin-right: 15px;
+    a {
+    color: #0074D9;
+      &:visited {
+        color: #85144b;
+      }
+    }
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+

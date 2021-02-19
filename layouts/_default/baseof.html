@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7YWD891Z8X"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-7YWD891Z8X');
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+	<!-- styles -->
+    {{ $style := resources.Get "css/main.scss" | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+	{{ block "styles" . }}
+	{{ end }}
+
+	<!-- icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<title>{{ .Site.Title }}</title>
+</head>
+<body>
+	{{ partial "nav.html" . }}
+	<div id="body">
+		<div id="container">
+			{{ block "main" . }} {{ end }}
+		</div>
+	</div>
+	{{ partial "foot.html" . }}
+</body>

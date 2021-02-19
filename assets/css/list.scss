@@ -1,0 +1,22 @@
+@import "responsive.scss";
+.nav { 
+	padding-bottom: 30px;
+	@include lg {
+		padding-bottom: 50px;
+	}
+	nav {
+		height: auto;
+	}
+}
+
+#body {
+	display: block;
+	margin: 0 auto;
+	max-width: 90vw;
+	@include lg {
+		max-width: 75vw;
+		#container {
+			width: 100%;
+		}
+	}
+}

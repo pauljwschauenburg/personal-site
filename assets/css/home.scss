@@ -1,0 +1,38 @@
+@import "responsive.scss";
+.headshot {
+  height: 15rem;
+  margin: 0;
+  flex: 1 1 auto;
+  padding-bottom: 2rem;
+  text-align: center;
+  img {
+    height: 100%;
+  }
+  @include md {
+    flex: 0 1 auto;
+  }
+  @include sm {
+    height: 22rem;
+    margin: 2rem;
+  }
+}
+
+#bio {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  #bio-text {
+    height: fit-content;
+  }
+  @include md {
+    padding: 0 4rem ;
+  }
+  @include lg {
+    max-width: 22rem;
+  }
+  @include xl {
+    max-width: 30rem;
+  }
+  h2 { text-transform: uppercase; }
+}

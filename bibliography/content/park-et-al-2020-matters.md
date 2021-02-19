@@ -19,4 +19,6 @@ venue: Transactions of the Association for Computational Linguistics
 links:
  - text: arXiv
    url: https://arxiv.org/abs/2012.06262
+ - text: Slides
+   url: /documents/park-et-al-2020-morphology-matters-slides.pdf
 ---

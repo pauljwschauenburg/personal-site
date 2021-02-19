@@ -23,7 +23,8 @@ We examine the current state-of-the-art in language modelling, machine translati
     url = "https://www.aclweb.org/anthology/2020.blackboxnlp-1.31",
     doi = "10.18653/v1/2020.blackboxnlp-1.31",
     pages = "333--341",
-    linkpaper = {https://www.aclweb.org/anthology/2020.blackboxnlp-1.31/},
+    linkPaper = {https://www.aclweb.org/anthology/2020.blackboxnlp-1.31/},
+    linkPoster = "/documents/thisisabert.pdf",
     abstract = "Recently, large-scale pre-trained neural network models such as BERT have achieved many state-of-the-art results in natural language processing. Recent work has explored the linguistic capacities of thes models. However, no work has focused on the ability of these models to generalize these capacities to novel words. This type of generalization is exhibited by humans, and is intimately related to morphology{---}humans are in many cases able to identify inflections of novel words in the appropriate context. This type of morphological capacity has not been previously tested in BERT models, and is important for morphologically-rich languages, which are under-studied in the literature regarding BERT{'}s linguistic capacities. In this work, we investigate this by considering monolingual and multilingual BERT models{'} abilities to agree in number with novel plural words in English, French, German, Spanish, and Dutch. We find that many models are not able to reliably determine plurality of novel words, suggesting potential deficiencies in the morphological capacities of BERT models.",
 }
 @inproceedings{haley-smolensky-2020-invertible,
@@ -38,7 +39,8 @@ We examine the current state-of-the-art in language modelling, machine translati
     address = "Barcelona, Spain (Online)",
     publisher = "International Committee on Computational Linguistics",
     url = "https://www.aclweb.org/anthology/2020.coling-main.328",
-    linkpaper = "https://www.aclweb.org/anthology/2020.blackboxnlp-1.31/",
+    linkPaper = "https://www.aclweb.org/anthology/2020.blackboxnlp-1.31/",
+    linkPoster = "/documents/haley-smolensky-2020-invertible-poster.pdf",
     doi = "10.18653/v1/2020.coling-main.328",
     pages = "3671--3683",
     abstract = "We present a novel method for embedding trees in a vector space based on Tensor-Product Representations (TPRs) which allows for inversion: the retrieval of the original tree structure and nodes from the vectorial embedding. Unlike previous attempts, this does not come at the cost of intractable representation size; we utilize a method for non-exact inversion, showing that it works well when there is sufficient randomness in the representation scheme for simple data and providing an upper bound on its error. To handle the huge number of possible tree positions without memoizing position representation vectors, we present a method (Cryptographic Role Embedding) using cryptographic hashing algorithms that allows for the representation of unboundedly many positions. Through experiments on parse tree data, we show a 30,000-dimensional Cryptographic Role Embedding of trees can provide invertibility with error {\textless} 1{\%} that previous methods would require 8.6 {\mbox{$\times$}} 1057 dimensions to represent.",
@@ -53,6 +55,7 @@ We examine the current state-of-the-art in language modelling, machine translati
       year = {2020},
       journal = {arXiv preprint arXiv:2012.06262},
       linkarXiv = {https://arxiv.org/abs/2012.06262},
+      linkSlides = "/documents/park-et-al-2020-morphology-matters-slides.pdf",
       abstract = "Prior studies in multilingual language modeling (e.g., Cotterell et al., 2018; Mielke et al., 2019) disagree on whether or not inflectional morphology makes languages harder to model. We attempt to resolve the disagreement and extend those studies. We compile a larger corpus of 145 Bible translations in 92 languages and a larger number of typological features. We fill in missing typological data for several languages and consider corpus-based measures of morphological complexity in addition to expert-produced typological features. We find that several morphological measures are significantly associated with higher surprisal when LSTM models are trained with BPE-segmented data. We also investigate linguistically-motivated subword segmentation strategies like Morfessor and Finite-State Transducers (FSTs) and find that these segmentation strategies yield better performance and reduce the impact of a language's morphology on language modeling.",
 }.
 @inproceedings{haley-wilson-2021-unnatural,
@@ -67,6 +70,7 @@ We examine the current state-of-the-art in language modelling, machine translati
     url = "https://scholarworks.umass.edu/scil/vol4/iss1/52/",
     eid = "52",
   	volume = "4",
-    linkpaper = {https://scholarworks.umass.edu/scil/vol4/iss1/52/}, linkposter = {/documents/haley-wilson-2021-unnatural-poster.pdf},
+    linkPaper = {https://scholarworks.umass.edu/scil/vol4/iss1/52/},
+    linkPoster = {/documents/haley-wilson-2021-unnatural-poster.pdf},
     abstract = "Morphological patterns can involve simple concatenation of fixed strings (e.g., unkind, kindness) or ‘nonconcatenative’ processes such as infixation (e.g., Chamorro {\textit{l\_{um}iʔeʔ}} ‘saw (actor-focus)’, Topping, 1973) and reduplication (e.g., Amele {\textit{\_{ba}bagawen}} ‘as he came out’, Roberts, 1987), among many others (e.g., Anderson, 1992; Inkelas, 2014). Recent work has established that deep neural networks are capable of inducing both concatenative and nonconatenative patterns (e.g., Kann and Schütze, 2017; Nelson et al., 2020). In this paper, we verify that encoder-decoder networks can learn and generalize attested types of infixation and reduplication from modest training sets. We show further that the same networks readily learn many infixation and reduplication patterns that are unattested in natural languages, raising questions about their relationship to linguistic theory and viability as models of human learning.",
 }

@@ -1,0 +1,27 @@
+<div class="nav" id="menu">
+	<div class="logo">
+		<span>Coleman Haley</span>
+	</div>
+	<div class="burger">
+	<button id="menu-button" onclick=menuOnClick() class="hamburger hamburger--squeeze" type="button">
+		<span class="hamburger-box">
+			<span class="hamburger-inner"></span>
+		</span>
+	</button>
+	</div>
+	<nav>
+		{{ $currentPage := . }}
+		{{ range .Site.Menus.main }}
+			<a href="{{ .URL }}" 
+			   {{ if or ($currentPage.IsMenuCurrent "main" .) }}
+				   class="active"
+			   {{ end }}
+			>
+			<span class="menu-text">
+				{{ cond (and ($currentPage.IsMenuCurrent "main" .) (isset .Params "activename")) .Params.activename .Name }}
+			</span>
+			</a>
+		{{ end }}
+	</nav>
+</div>
+
