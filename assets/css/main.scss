@@ -32,6 +32,15 @@ body, html {
   box-sizing: border-box;
 }
 
+a {
+  color: $textcolor;
+  text-decoration: underline;
+  &:hover, &:active {
+    background: $textcolor;
+    color: $bgcolor;
+  }
+}
+
 
 p {
   font-family: 'Crimson Text', IBM Plex Mono, monospace, sans-serif;
