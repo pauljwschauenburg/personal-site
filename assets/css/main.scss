@@ -43,7 +43,7 @@ a {
 
 
 p {
-  font-family: 'Crimson Text', IBM Plex Mono, monospace, sans-serif;
+  font-family: EB Garamond, 'Crimson Text', IBM Plex Mono, monospace, sans-serif;
   font-size: 15pt;
   @include sm {
     font-size: 12pt;
@@ -51,7 +51,7 @@ p {
 }
 
 h1,h2,h3, h4{
-  font-family: Crimson Text;
+  font-family: EB Garamond, Crimson Text;
   font-style: italic;
 }
 

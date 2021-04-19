@@ -20,7 +20,7 @@
     opacity: 1;
     padding: 15px;
     text-align: left;
-    font-family: Crimson Text, serif;
+    font-family: EB Garamond, Crimson Text, serif;
     font-style: italic;
     text-transform: uppercase;
     font-size: 24pt;
@@ -39,11 +39,12 @@
     justify-content: space-evenly;
     padding-top: 2rem;
     a {
-      font-family: 'Crimson Text', serif;
+      font-family: EB Garamond, 'Crimson Text', serif;
       text-transform: uppercase;
       font-style: italic;
       text-decoration: none;
       color: $textcolor;
+      background: none;
       @include lg {
         font-size: 24pt;
       }
