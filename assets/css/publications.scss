@@ -24,12 +24,6 @@ ul.links {
   li {
     display: inline;
     margin-right: 15px;
-    a {
-    color: #0074D9;
-      &:visited {
-        color: #85144b;
-      }
-    }
     font-family: 'IBM Plex Mono', monospace;
   }
 }

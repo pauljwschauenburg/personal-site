@@ -44,7 +44,8 @@
       font-style: italic;
       text-decoration: none;
       color: $textcolor;
-      background: none;
+      background: transparent;
+
       @include lg {
         font-size: 24pt;
       }
