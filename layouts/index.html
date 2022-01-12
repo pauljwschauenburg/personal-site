@@ -3,8 +3,12 @@
 	<link rel="stylesheet" href="{{ $style.Permalink }}">
 {{ end }}
 {{ define "main" }}
-<div class="headshot"><img  src="/img/headshot2020.jpg" alt="Headshot of Coleman"></div>
-	<div id="bio">
+	<div class="headshot progressive_figure">
+                <img src="/img/headshot2022.png" alt="Headshot of Paul."/> 
+                <div style="padding-bottom: 100%; background-color: #11141D; position: absolute; z-index: -1;"></div>
+	</div>
+
+	<div id="bio" class="textholder">
 		<div id="bio-text">
 		{{ .Content }}
 		</div>

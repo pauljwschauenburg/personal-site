@@ -1,0 +1,10 @@
+{{ $image := resources.Get  .src }}
+{{ $placeholder := $image.Resize "48x q20" }} 
+{{ $aspect := div (mul $image.Height 100.0) $image.Width }}
+
+<div class="image_placeholder" style="max-width: {{$image.Width}}px; height: 100%;">
+<div class="placeholder" data-large="{{ $image.Permalink }}" data-alt="{{.alt}};">  
+  <img src="{{ $placeholder.Permalink }}" class="img-small" alt="{{.alt}}" width={{ $image.Width }} height={{ $image.Height }} style="height: 100%">
+  <div style="padding-bottom: {{ $aspect }}%;"></div>
+</div>
+</div>

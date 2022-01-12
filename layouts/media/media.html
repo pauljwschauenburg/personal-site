@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div>
+	{{ range (where .Data.Pages "Params.publication" "!=" "").ByDate.Reverse}}
+
+	<div style="margin: 0 auto; text-align: center;" class="textholder">
+		<h2 class="title">{{.Title}}</h2>
+                <iframe class="mediaembed" src="{{.Params.Embedlink}}" allowfullscreen/>
+                
+                {{ .Content }}
+	</div>
+	{{end}}
+</div>
+{{ end }}
