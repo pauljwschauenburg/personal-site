@@ -1,0 +1,9 @@
+# Paul J.W. Schauenburg
+
+Paul J.W. Schauenburg wurde 1998 in München geboren. Er begann im Alter von sechs Jahren, das Blockflötenspiel zu lernen. Schon als Kind lernte Paul nicht nur Blockflöte, sondern auch ähnliche Instrumente, wie zum Beispiel Einhandflöte, zu spielen. Dies führte auch dazu, dass er im Alter von 11-18 Jahren in einem Konstanzer Irish Pub Tin Whistle spielte, wodurch er eine starke Fähigkeit zum Spielen nach Gehör und zum schnellen Denken in Musik entwickelte.
+
+Seit 2016 baut er auf dieser vielseitigen Grundlage auf in seinem Bachelorstudium am Conservatorium van Amsterdam, mit Jorge Isaac als Hauptfachdozent. Er wird auch von Erik Bosgraaf, María Martínez Ayerza, Hester Groenleer, und anderen unterrichtet. Das breite Lehrangebot des Fachbereichs, das gleichermaßen großen wert auf alte und zeitgenössische Musik legt, ist eine fruchtbare Umgebung für Pauls Liebe zu zahlreichen Musikstilen, im Besonderen Minimal Music, Post-Minimal, elektronische Musik, und für seine Liebe zu Wiederholung und Mustern in Musik aus allen Epochen.
+
+Paul nimmt seit zwei Jahren Kompositionsunterricht von Meriç Artaç, und schreibt Musik für sich selbst und für Blockflötenensemble. Seine Kompositionen sind Post-Minimalistisch orientiert, und beeinflusst von verschiedenen Arten elektronischer Musik. Gleichzeitig lernt er, Computerprogrammierung in Musik zu verwenden. Er arbeitet dafür vor allem mit der Programmiersprache SuperCollider, und nimmt Unterricht in Elektronischer Music und Programmieren für Musik mit Jorrit Tamminga.
+
+Paul war ein Mitglied des dreistimmigen Blockflötenconsorts „Le Réveil“, zusammen mit Kristy van Dijk und Gabriel Belkheiri, welches von 2018 bis 2021 aktiv war. Als Le Réveil spielten sie vor allem Musik der Renaissance und des Mittelalters. Paul und Kristy arbeiten jetzt an einer neuen Zusammenarbeit, mit einem Schwerpunkt in neuer Musik, Elektronik, und neuen Kompositionen von beiden Spielern.
