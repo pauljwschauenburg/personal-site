@@ -9,10 +9,10 @@
 		</span>
 	</button>
 	</div>
-	<nav>
+	<nav id="nav">
 		{{ $currentPage := . }}
 		{{ range .Site.Menus.main }}
-			<a href="{{ .URL }}" 
+			<a href="{{ .URL | relLangURL }}" 
 			   {{ if or ($currentPage.IsMenuCurrent "main" .) }}
 				   class="active"
 			   {{ end }}
@@ -22,6 +22,7 @@
 			</span>
 			</a>
 		{{ end }}
+                {{/* partial "language-switcher.html" . */}}
 	</nav>
 </div>
 

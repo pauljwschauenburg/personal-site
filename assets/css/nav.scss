@@ -30,7 +30,27 @@
       position: absolute;
     }
   }
-  nav {
+  #langswitcher {
+      ul {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         display: grid;
+
+         li {
+           padding: 0;
+         }
+     }
+     > ul {
+       grid-auto-flow: column;
+    
+       > li {
+         margin: 0 0.5rem;
+       }
+     }
+    
+  }
+  #nav {
     opacity: 0;
     height: 0;
     width: 0;

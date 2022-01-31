@@ -1,31 +1,55 @@
 baseURL = "https://colemanhaley.com/"
-languageCode = "en-us"
 title = "Paul J.W. Schauenburg"
-
+defaultContentLanguage = 'en'
+[languages]
+	[languages.en]
+		languageName = "EN"
+		[languages.en.menu]
+		[[languages.en.menu.main]]
+			identifier ="homepage"
+			name = "P.J.W.S."
+			url = "/"
+			weight = 1
+			[languages.en.menu.main.params]
+				activename = "Home"
+		[[languages.en.menu.main]]
+			identifier ="media"
+			name = "Media"
+			url = "/media/"
+			weight = 2
+		[[languages.en.menu.main]]
+			name = "About"
+			url = "/about/"
+			weight = 3
+		[[languages.en.menu.main]]
+			identifier ="blog"
+			name = "Contact"
+			url = "/contact/"
+	[languages.de]
+		languageName = "DE"
+		[languages.de.menu]
+		[[languages.de.menu.main]]
+			identifier ="homepage"
+			name = "P.J.W.S."
+			url = "/"
+			weight = 1
+			[languages.de.menu.main.params]
+				activename = "Startseite"
+		[[languages.de.menu.main]]
+			identifier ="media"
+			name = "Medien"
+			url = "/media/"
+			weight = 2
+		[[languages.de.menu.main]]
+			name = "Biographie"
+			url = "/about/"
+			weight = 3
+		[[languages.de.menu.main]]
+			identifier ="blog"
+			name = "Kontakt"
+			url = "/contact/"
+			weight = 4
 [params]
 	cutoff = 30
-	author = "Coleman Haley"
+	author = "Paul Schauenburg"
 
-# MENU CONTENTS
-[menu]
-	[[menu.main]]
-		identifier ="homepage"
-		name = "P.J.W.S."
-		url = "/"
-		weight = 1
-		[menu.main.params]
-			activename = "Home"
-	[[menu.main]]
-		identifier ="media"
-		name = "Media"
-		url = "/media/"
-		weight = 2
-	[[menu.main]]
-		name = "About"
-		url = "/about/"
-		weight = 3
-	[[menu.main]]
-		identifier ="blog"
-		name = "Contact"
-		url = "/contact/"
-		weight = 4
