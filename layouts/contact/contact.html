@@ -1,6 +1,12 @@
+
+{{ define "styles" }}
+    {{ $style := resources.Get "css/contact.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ end }}
 {{ define "main" }}
 <div style="width: 95vw;">
-<div style="width: 50vw; text-align: left; margin: 0 auto;" class="textholder">
+<div style="text-align: left;" class="textholder contact">
+
 	<h2 style="font-style: normal;">EMAIL: pauljwschauenburg@gmail.com</h2>
 </div>
 </div>

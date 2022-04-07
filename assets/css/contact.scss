@@ -1,0 +1,9 @@
+@import "responsive.scss";
+.contact {
+  margin: 0 auto;
+  width: 100%;
+  @include md {
+    width: 50vw;
+  }
+
+}

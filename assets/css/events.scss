@@ -1,0 +1,8 @@
+@import "responsive.scss";
+.event-img {
+width: auto;
+max-height: 40vh;
+@include lg {
+max-height: 55vh;
+}
+}
