@@ -2,7 +2,7 @@ baseURL = "https://www.pauljwschauenburg.com/"
 title = "Paul J.W. Schauenburg"
 defaultContentLanguage = 'en'
 [languages]
-	[languages.en]
+    [languages.en]
 		languageName = "EN"
 		[languages.en.menu]
 		[[languages.en.menu.main]]
@@ -54,6 +54,30 @@ defaultContentLanguage = 'en'
 			name = "Kontakt"
 			url = "/contact/"
 			weight = 4
+    [languages.nl]
+        languageName = "NL"
+        [languages.nl.menu]
+        [[languages.nl.menu.main]]
+            identifier = "homepage"
+            name = "P.J.W.S."
+            url = "/"
+            weight = 1
+            [languages.nl.menu.main.params]
+                activename = "Startpagina"
+        [[languages.nl.menu.main]]
+            identifier = "media"
+            name = "Media"
+            url = "/media/"
+            weight = 2
+        [[languages.nl.menu.main]]
+            name = "Biografie"
+            url = "/about/"
+            weight = 3
+        [[languages.nl.menu.main]]
+            identifier = "blog"
+            name = "Contact"
+            url = "/contact/"
+            weight = 4
 [params]
 	cutoff = 30
 	author = "Paul Schauenburg"
