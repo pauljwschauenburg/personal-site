@@ -1,20 +1,27 @@
 {{ define "styles" }}
-    {{ $style := resources.Get "css/events.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
-	<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ $style := resources.Get "css/events.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
 {{ end }}
 {{ define "main" }}
 <div>
+
+	{{ if not .Pages }}
+	<div style="margin: 80px auto; text-align: left;" class="textholder">
+		<div style="text-align: center">
+			<h1 class="title">No upcoming events.</h1>
+		</div>
+	</div>
+	{{ end }}
 	{{ range .Pages }}
 	<div style="margin: 80px auto; text-align: left;" class="textholder">
-                <div style="text-align: center">
-		<img src={{.Params.Image}} class="event-img"/>
-                </div>
+		<div style="text-align: center">
+			<img src={{.Params.Image}} class="event-img" />
+		</div>
 		<h1 class="title" style="margin-bottom: 5px; font-style: normal">{{.Title}}</h1>
 		<h3 style="margin-top: 0; margin-bottom: 0px;">{{.Params.Ensemble}}</h3>
-                <h3 style="font-style: normal; text-align: right; margin-bottom: 5px; margin-top: 0;">{{.Params.Location}}</h3>
-                <h2 class="title" style="font-style: normal; text-align: right"><a href={{.Params.Tickets}} >Tickets</a></h2>
+		<h3 style="font-style: normal; text-align: right; margin-bottom: 5px; margin-top: 0;">{{.Params.Location}}</h3>
+		<h2 class="title" style="font-style: normal; text-align: right"><a href={{.Params.Tickets}}>Tickets</a></h2>
 	</div>
-
 	{{end}}
 </div>
 {{ end }}
