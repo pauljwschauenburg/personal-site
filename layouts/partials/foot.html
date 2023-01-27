@@ -2,6 +2,19 @@
 	function menuOnClick() {
 		document.getElementById("menu").classList.toggle("active")
 		document.getElementById("menu-button").classList.toggle("is-active")
+                document.getElementById("body").classList.toggle("is-fixed")
 	}
 </script>
-
+  <script>
+    window.onload = function() {
+      if (localStorage.getItem("hasCodeRunBefore") === null) {
+        var lang = navigator.language || navigator.userLanguage;
+        if (lang.indexOf('de') == 0) {
+            window.location = '/de/';
+        } else if (lang.indexOf('nl') == 0) {
+            window.location = '/nl/';
+        }
+        localStorage.setItem("hasCodeRunBefore", true);
+      }
+    }
+  </script>

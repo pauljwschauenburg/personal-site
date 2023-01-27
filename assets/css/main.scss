@@ -18,6 +18,11 @@ body {
   color: $textcolor;
 }
 
+.is-fixed {
+  position: fixed;
+  z-index: -1;
+}
+
 
 #body {
   justify-content: center;
