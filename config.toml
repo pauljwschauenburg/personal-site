@@ -30,6 +30,7 @@ defaultContentLanguage = 'en'
 			identifier ="blog"
 			name = "Contact"
 			url = "/contact/"
+            weight = 5
 	[languages.de]
 		languageName = "DE"
 		[languages.de.menu]
@@ -49,11 +50,16 @@ defaultContentLanguage = 'en'
 			name = "Biographie"
 			url = "/about/"
 			weight = 3
+        [[languages.de.menu.events]]
+            identifier = "blog"
+            name = "Events"
+            url = "/events/"
+            weight = 4
 		[[languages.de.menu.main]]
 			identifier ="blog"
 			name = "Kontakt"
 			url = "/contact/"
-			weight = 4
+			weight = 5
     [languages.nl]
         languageName = "NL"
         [languages.nl.menu]
@@ -75,9 +81,14 @@ defaultContentLanguage = 'en'
             weight = 3
         [[languages.nl.menu.main]]
             identifier = "blog"
+            name = "Evenementen"
+            url = "/events/"
+            weight = 4
+        [[languages.nl.menu.main]]
+            identifier = "blog"
             name = "Contact"
             url = "/contact/"
-            weight = 4
+            weight = 5
 [params]
 	cutoff = 30
 	author = "Paul Schauenburg"
