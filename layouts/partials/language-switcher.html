@@ -4,10 +4,10 @@
   {{ $lang := . }}
 
   {{ if eq . $.Site.Language }}
-  <a class="active" href="{{ $.Page.Permalink }}">{{.LanguageName}}</a>
+  <!--<a class="active" href="{{ $.Page.Permalink }}">{{.LanguageName}}</a>-->
   {{end}}
   {{ range $.Translations }}
-  {{ if ne $lang $.Site.Language }}
+  {{ if eq $lang $.Site.Language }}
   <a href="{{.Permalink}}">{{.Language.LanguageName}}</a>
   {{end}}
   {{end}}
