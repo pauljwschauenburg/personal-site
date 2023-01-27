@@ -1,9 +1,15 @@
 <script>
-	function menuOnClick() {
-		document.getElementById("menu").classList.toggle("active")
-		document.getElementById("menu-button").classList.toggle("is-active")
-                document.getElementById("body").classList.toggle("is-fixed")
-	}
+  function menuOnClick() {
+    document.getElementById("menu").classList.toggle("active")
+    document.getElementById("menu-button").classList.toggle("is-active")
+    document.getElementById("body").classList.toggle("is-fixed")
+    if (document.getElementById("menu").classList.contains("language")) {
+      document.getElementById("menu").classList.toggle("language")
+    }
+  }
+  function languageOnMouse() {
+      document.getElementById("menu").classList.toggle("language")
+  }
 </script>
   <script>
     window.onload = function() {

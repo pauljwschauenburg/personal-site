@@ -1,5 +1,68 @@
 @import "responsive.scss";
 @import "colors.scss";
+.language {
+  .menu-text {
+    display: none;
+  }
+  #nav a:first-child {
+    .menu-text {
+      display: inline;
+      visibility: visible;
+    }
+  }
+  #langswitcher {
+    display: flex;
+    a {
+      display: inline;
+      padding-left: 50px;
+      opacity: 50%;
+    }
+    .active {
+      opacity: 100%;
+    }
+    a:hover {
+      opacity: 100%;
+    }
+  }
+}
+
+#langswitcher {
+    height: fit-content;
+    .active {
+      display: inline;
+      opacity: 100%;
+    }
+    a {
+      display: none;
+      opacity: 0%;
+      transition: all 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+}
+
+.nav.active {
+  &.language {
+    a {
+      display: none;
+    }
+    #langswitcher {
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 3s;
+    }
+  }
+  #langswitcher {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    .active {
+      pointer-events: none; 
+      transition: none;
+    }
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 .nav {
   display: flex;
@@ -30,26 +93,6 @@
     span {
       position: absolute;
     }
-  }
-  #langswitcher {
-      ul {
-         list-style: none;
-         margin: 0;
-         padding: 0;
-         display: grid;
-
-         li {
-           padding: 0;
-         }
-     }
-     > ul {
-       grid-auto-flow: column;
-    
-       > li {
-         margin: 0 0.5rem;
-       }
-     }
-    
   }
   #nav {
     opacity: 0;
