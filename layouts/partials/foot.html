@@ -15,6 +15,48 @@
   function languageToggle() {
       document.getElementById("menu").classList.toggle("language")
   }
+  function activateMedia( id, link ) {
+    if (window.matchMedia('(max-width:1069px)').matches) {
+      window.location.href = link
+    }
+    document.getElementById("mediagrid").classList.add("selected");
+    const medias = document.getElementsByClassName("media");
+    for (const media of medias) {
+      media.classList.remove("active")
+    }
+    const titles = document.getElementsByClassName("title");
+    for (const title of titles) {
+      title.classList.remove("active")
+    }
+    const mediaparts = document.getElementsByClassName(id)
+    for (const part of mediaparts) {
+      part.classList.add("active");
+    }
+
+  }
+  var curScroll = 0;
+  function mouseWheelEventHandler(e)
+{
+    const sidebar = document.getElementById("titles");
+    if( !sidebar.querySelector(":hover") ) {
+        return true;
+    }
+
+    var event = window.event || e; //equalize event object
+    var delta = event.detail ? event.detail*(-120) : event.wheelDelta; //check for detail first so Opera uses that instead of wheelDelta
+    console.log('ho')
+    sidebar.scrollTop = sidebar.scrollTop-delta;        
+}
+
+
+var mouseWheelEvent = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel"; //FF doesn't recognize mousewheel as of FF3.x
+
+if (document.attachEvent) { //if IE (and Opera depending on user setting) 
+    document.attachEvent("on"+mouseWheelEvent, mouseWheelEventHandler);
+} else if (document.addEventListener) { //WC3 browsers 
+    document.addEventListener(mouseWheelEvent, mouseWheelEventHandler, false);
+}
+
 </script>
   <script>
     window.onload = function() {

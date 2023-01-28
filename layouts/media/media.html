@@ -1,9 +1,20 @@
 {{ define "main" }}
-<div>
+<div id="mediagrid">
+        <div id="medias">
 	{{ range .Pages }}
-	<div style="margin: 37px auto; text-align: left;" class="textholder">
-		<h1 class="title"><a href={{.Permalink}}>{{.Title}}</a></h1>
+        <div class="media textholder {{ .File.UniqueID }}">
+                <iframe width="700" height="394" src={{.Params.Embedlink}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               {{.Content}}
+	</div>
+        {{end}}
+        </div>
+        <div id="titles">
+        {{ range .Pages }}
+        <div style="margin: 37px auto; text-align: left;" class="textholder title {{.File.UniqueID}}">
+          <h1><span onclick="activateMedia({{.File.UniqueID}}, {{.Permalink}})">{{.Title}}</span>
+
 	</div>
 	{{end}}
+        </div>
 </div>
 {{ end }}
