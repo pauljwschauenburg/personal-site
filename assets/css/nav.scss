@@ -35,7 +35,7 @@
     height: fit-content;
     .langbutt {
       display: inline;
-      opacity: 50%;
+      opacity: 70%;
     }
     a {
       display: none;
@@ -108,8 +108,10 @@
     width: 0;
     position: absolute;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 2rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
     animation: fadeIn 2s;
     a {
       font-family: EB Garamond, 'Crimson Text', serif;

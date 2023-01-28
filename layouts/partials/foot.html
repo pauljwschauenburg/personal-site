@@ -8,6 +8,11 @@
     }
   }
   function languageOnMouse() {
+    if (window.matchMedia('(min-device-width: 1070px)').matches) {
+        languageToggle()
+    }
+  }
+  function languageToggle() {
       document.getElementById("menu").classList.toggle("language")
   }
 </script>
