@@ -43,14 +43,14 @@ body {
   // height: 95%;
   height: calc(100vh - 75px);
   @include lg {
-      height: calc(100vh - 2rem);
+      height: calc(100vh - 75px);
   }
   box-sizing: border-box;
 }
 
 .textholder {
-  background-color: rgba(6, 11, 22, 0.7);
-  box-shadow: 0px 0px 40px 40px rgba(6, 11, 22, 0.7)
+  background-color: rgba(14, 19, 28, 0.7);
+  box-shadow: 0px 0px 40px 40px rgba(14, 19, 28, 0.7)
 }
 
 a {
@@ -67,7 +67,7 @@ a {
   z-index: -1;
   bottom: 0px;
   left: 0px;
-  height: 100vh;
+  height: calc(100vh - 75px);
   overflow: hidden;
 }
 
