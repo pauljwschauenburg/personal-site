@@ -1,5 +1,5 @@
 <div class="nav" id="menu">
-	<div class="logo">
+	<div class="logo textholder">
 		<span>P.J.W.S.</span>
 	</div>
 	<div class="burger">
@@ -17,7 +17,7 @@
 				   class="active"
 			   {{ end }}
 			>
-			<span class="menu-text">
+			<span class="menu-text textholder">
 				{{ cond (and ($currentPage.IsMenuCurrent "main" .) (isset .Params "activename")) .Params.activename .Name }}
 			</span>
 			</a>

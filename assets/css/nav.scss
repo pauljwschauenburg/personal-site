@@ -35,7 +35,7 @@
     height: fit-content;
     .langbutt {
       display: inline;
-      opacity: 70%;
+      opacity: 50%;
     }
     a {
       display: none;
@@ -46,9 +46,12 @@
 .nav.active {
   &.language {
     a {
+      pointer-events: none;
       display: none;
     }
     #langswitcher {
+      pointer-events: auto;
+      z-index: 900;
       display: flex;
       flex-direction: column;
       animation: fadeIn 3s;
@@ -58,7 +61,8 @@
     padding-top: 45px;
     padding-bottom: 45px;
     .langbutt {
-      //pointer-events: none; 
+      pointer-events: none; 
+      cursor: pointer;
       transition: none;
     }
   }
@@ -112,7 +116,6 @@
     padding-top: 2rem;
     padding-left: 4vw;
     padding-right: 4vw;
-    animation: fadeIn 2s;
     a {
       font-family: EB Garamond, 'Crimson Text', serif;
       text-transform: uppercase;
