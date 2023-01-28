@@ -46,11 +46,9 @@
 .nav.active {
   &.language {
     a {
-      pointer-events: none;
       display: none;
     }
     #langswitcher {
-      pointer-events: auto;
       z-index: 900;
       display: flex;
       flex-direction: column;
@@ -58,10 +56,7 @@
     }
   }
   #langswitcher {
-    padding-top: 45px;
-    padding-bottom: 45px;
     .langbutt {
-      pointer-events: none; 
       cursor: pointer;
       transition: none;
     }
@@ -116,7 +111,7 @@
     padding-top: 2rem;
     padding-left: 4vw;
     padding-right: 4vw;
-    a {
+    a, .langbutt {
       font-family: EB Garamond, 'Crimson Text', serif;
       text-transform: uppercase;
       font-style: italic;
@@ -171,21 +166,34 @@
       height: 0;
       opacity: 0;
     }
-    a {
+    a, .langbutt {
       display: block;
-      padding: 45px;
       font-size: 24pt;
     }
     #nav {
-      display: block;
-      padding: 0;
-      margin: auto 0;
+      display: flex;
+      padding-left: 10vw;
+      padding-bottom: 2rem;
+      margin: 0;
       opacity: 1;
       position: relative;
       width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
       height: auto;
+
+    }
+    @include md {
+      #nav {
+        min-height: 800px;
+        margin: auto;
+        a, .langbutt {
+          font-size: 36pt;
+        }
+      }
     }
   }
+  
 
   @include lg {
     display: block;
@@ -196,6 +204,23 @@
       height: 0;
       padding: 0;
     }
+  }
+}
+.language.active {
+      #langswitcher {
+          margin: auto 0;
+          min-height: 300px;
+          justify-content: space-between;
+          a {
+            padding-left: 0px;
+          }
+      }
+    @include md {
+      #langswitcher {
+          margin: auto 0;
+          justify-content: space-between;
+          min-height: 500px;
+      }
   }
 }
 
