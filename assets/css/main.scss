@@ -50,7 +50,7 @@ body {
 }
 
 .textholder {
-  background-color: rgba(14, 19, 28, 0.7);
+  background-color: rgba(14, 19, 28, 0.8);
   box-shadow: 0px 0px 40px 40px rgba(14, 19, 28, 0.7)
 }
 
@@ -77,7 +77,7 @@ p {
   font-family: EB Garamond, 'Crimson Text', Georgia, serif, IBM Plex Mono, monospace, sans-serif;
   font-size: 15pt;
   @include sm {
-    font-size: 12pt;
+    font-size: 14pt;
   }
 }
 

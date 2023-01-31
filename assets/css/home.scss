@@ -15,6 +15,9 @@
     height: 22rem;
     margin: 2rem;
   }
+  @include xl {
+    height: 25rem;
+  }
 }
 
 // .bgimg {
@@ -36,11 +39,11 @@
   @include md {
     padding: 0 4rem ;
   }
-  @include lg {
-    max-width: 22rem;
-  }
+  // @include lg {
+  //   max-width: 0 4rem;
+  // }
   @include xl {
-    max-width: 30rem;
+    max-width: 35rem;
   }
   h2 { text-transform: uppercase; }
 }
