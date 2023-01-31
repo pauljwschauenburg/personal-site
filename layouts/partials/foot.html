@@ -34,8 +34,8 @@
     }
 
   }
-  var curScroll = 0;
-  function mouseWheelEventHandler(e)
+  <!-- var curScroll = 0; -->
+  <!-- function mouseWheelEventHandler(e) -->
 {
     const sidebar = document.getElementById("titles");
     if( !sidebar.querySelector(":hover") ) {
@@ -49,7 +49,7 @@
 }
 
 
-var mouseWheelEvent = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel"; //FF doesn't recognize mousewheel as of FF3.x
+<!-- var mouseWheelEvent = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel"; //FF doesn't recognize mousewheel as of FF3.x -->
 
 if (document.attachEvent) { //if IE (and Opera depending on user setting) 
     document.attachEvent("on"+mouseWheelEvent, mouseWheelEventHandler);
