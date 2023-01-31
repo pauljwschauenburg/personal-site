@@ -80,7 +80,7 @@ position:absolute;top:0;left:0;width:100%;height:100%;
       #titles {
         .title:first-child {
           opacity: 50%;
-          text-decoration: underline;
+          text-decoration: none;
           &:hover {
             opacity: 100%;
             text-decoration: underline;
