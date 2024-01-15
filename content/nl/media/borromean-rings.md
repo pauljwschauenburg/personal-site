@@ -1,13 +1,9 @@
 ---
 title: "Borromean Rings (2021)"
 author: Paul Schauenburg
-aliases:
-  - borromean-rings.de.md
-  - borromean-rings.nl.md
-
 year: 2021
 date: 2022-01-09T18:50:49Z
 embedlink: "https://www.youtube.com/embed/6jj0t935hHc"
 weight: 1
 ---
-Borromean Rings for basset recorder in f and electronics was written in early 2021 by Paul J.W. Schauenburg. The piece is based on a five-fold multi-tap delay in a regular rhythm. Simple melodic lines and arpeggi are timed in a way that creates an “echo counterpoint” throughout the piece. Different panning of each single delay creates changing panning patterns between the different delays throughout the piece, sometimes making successive events come from opposite sides, sometimes creating an illusion of movement.
+Borromean Rings voor basblokfluit in f en elektronica werd begin 2021 door Paul J.W. Schauenburg geschreven. Het stuk baseert op een vijfvoudige mult-tap-delay in een regelmatig ritme. Eenvoudige melodische lijnen en arpeggio's worden zo getimed, dat er een ‘echo-contrapunt’ ontstaat. Verschillende posities van elke delay in de ruimte veroorzaken verschillende ruimtelijke patronen tussen de verschillende delay's door het hele stuk heen, waardoor sommige opeenvolgende klanken uit tegenovergestelde richtingen komen, en sommige een illusie van beweging produceren.

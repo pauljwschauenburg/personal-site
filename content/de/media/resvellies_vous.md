@@ -5,6 +5,4 @@ draft: false
 embedlink: "https://www.youtube.com/embed/VSfU7oA8_o4"
 weight: 2
 ---
-“Resvellies-vous” by Guillaume Dufay is the piece that gave trio Le Réveil its name. Throughout their collaboration, the ensemble played this piece many times. Here it is played on a set of Renaissance consort instruments, specifically a tenor in c', a basset in f, and a bass in c.
-
-
+„Resvellies-vous“ von Guillaume Dufay ist das Stück, das dem Trio Le Réveil seinen Namen gab. Das Trio spielte dieses Stück oft. Hier wird es auf einem Set von Renaissance-Consortblockflöten gespielt: einer Tenorblockflöte in c', Bassblockflöte in f, und Großbassblockflöte in c.

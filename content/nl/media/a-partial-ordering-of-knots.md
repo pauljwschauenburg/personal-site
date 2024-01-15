@@ -9,4 +9,4 @@ date: 2022-01-16T20:22:00Z
 embedlink: "https://www.youtube.com/embed/ZNFyOqJGE2M"
 weight: -1
 ---
-A Partial Ordering of Knots for alto recorder solo was written in 2022 by Paul J.W. Schauenburg.
+A Partial Ordering of Knots voor alblokfluit solo werd in 2022 door Paul J.W. Schauenburg geschreven.
