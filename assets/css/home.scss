@@ -15,15 +15,18 @@
     height: 22rem;
     margin: 2rem;
   }
+  @include xl {
+    height: 25rem;
+  }
 }
 
-.bgimg {
-  position: absolute;
-  z-index: -1;
-  bottom: 0px;
-  right: 0px;
-  height: 100vh;
-}
+// .bgimg {
+//   position: absolute;
+//   z-index: -1;
+//   bottom: 0px;
+//   right: 0px;
+//   height: 100vh;
+// }
 
 #bio {
   padding: 0 0.5rem;
@@ -36,13 +39,11 @@
   @include md {
     padding: 0 4rem ;
   }
-  @include lg {
-    max-width: 22rem;
-  }
+  // @include lg {
+  //   max-width: 0 4rem;
+  // }
   @include xl {
-    max-width: 30rem;
+    max-width: 35rem;
   }
   h2 { text-transform: uppercase; }
-  background-color: rgba(17, 20, 29, 0.7);
-  box-shadow: 0px 0px 40px 40px rgba(17, 20, 29, 0.7)
 }

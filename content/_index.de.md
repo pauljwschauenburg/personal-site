@@ -1,5 +1,0 @@
-## Paul J.W. Schauenburg
-
-Paul J.W. Schauenburg ist ein in Amsterdam lebender Blockflötist und Komponist mit einem Interesse an elektronischer Musik. Als Spieler hat Paul in seinem laufenden Studium Erfahrung mit sowohl alter als auch zeitgenössischer Musik gesammelt. In der alten Musik hat er vor allem Musik der Renaissance und des Mittelalters gespielt, mit dem Trio „Le Réveil“, aktiv 2018-2021, und seit kurzer Zeit mit [The Royal Wind Music](https://www.royalwindmusic.org). In der neuen Musik liegt sein Interesse primär in der elektronischen Musik.
-
-Pauls eigene Musik ist hauptsächlich von Minimal Music beeinflusst, zum beispiel durch die Musik von Philip Glass. Zu seinen anderen Einflüssen zählen postmoderne Komponist*innen wie Hildur Guðnadóttir, alte Musik (Barock, Renaissance, Mittelalter), Techno, House, und Ambient Music von Musikern wie Scanner. Die meiste von Pauls Musik enthält eine elektronische Komponente, die hauptsächlich in der Programmiersprache SuperCollider geschrieben wird. Er erweitert seine Kenntnis von Computermusik und Programmieren durch Unterricht von seinem Kompositionslehrer Jorrit Tamminga.

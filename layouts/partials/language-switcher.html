@@ -1,19 +1,20 @@
 {{ if .Site.IsMultiLingual }}
-<div>
+<div id="langswitcher" onmouseout="languageOnMouse()" onmouseover="languageOnMouse()">
   {{ range .Site.Languages }}
   {{ $lang := . }}
 
-  {{ if eq . $.Site.Language }}
-  <a class="active" href="{{ $.Page.Permalink }}">{{.LanguageName}}</a>
-  {{end}}
   {{ range $.Translations }}
-  {{ if ne $lang $.Site.Language }}
-  <a href="{{.Permalink}}">{{.Language.LanguageName}}</a>
+  {{ if eq $lang $.Site.Language }}
+  <a href="{{.Permalink}}"><span>{{.Language.LanguageName}}</span></a>
   {{end}}
+  {{end}}
+  {{ if eq . $.Site.Language }}
+  <a class="active" href="{{ $.Page.Permalink }}"><span>{{.LanguageName}}</span></a>
   {{end}}
   
   {{end}}
 
+  <span class="langbutt textholder" onclick="languageToggle()">{{ T "language" }}</span>
 
 {{ end }}
 

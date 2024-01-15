@@ -1,11 +1,81 @@
 @import "responsive.scss";
 @import "colors.scss";
+.language {
+  .menu-text {
+    display: none;
+  }
+  #nav a:first-child {
+    animation: none;
+    .menu-text {
+      display: inline;
+      visibility: visible;
+    }
+  }
+  #langswitcher {
+    animation: fadeIn 0.5s;
+    display: flex;
+    .langbutt {
+      display: none;
+    }
+    a {
+      display: inline;
+      padding-left: 50px;
+      opacity: 50%;
+    }
+    .active {
+      opacity: 100%;
+    }
+    a:hover {
+      opacity: 100%;
+    }
+  }
+}
+
+#langswitcher {
+    height: fit-content;
+    .langbutt {
+      display: inline;
+      opacity: 50%;
+    }
+    a {
+      display: none;
+      opacity: 0%;
+    }
+}
+
+.nav.active {
+  &.language {
+    a {
+      display: none;
+    }
+    #langswitcher {
+      z-index: 900;
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 1s;
+    }
+  }
+  #langswitcher {
+    .langbutt {
+      cursor: pointer;
+      transition: none;
+    }
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOut {
+  100% { opacity: 1; }
+  0% { opacity: 0;  }
+}
 
 .nav {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 15px;
   padding-right: 10px;
+  height:75px;
   span {
     position: relative;
   }
@@ -15,6 +85,7 @@
     width: 70px;
     height: 54px;
     padding-top: 6px;
+    z-index: 1000;
   }
   .logo {
     opacity: 1;
@@ -30,35 +101,17 @@
       position: absolute;
     }
   }
-  #langswitcher {
-      ul {
-         list-style: none;
-         margin: 0;
-         padding: 0;
-         display: grid;
-
-         li {
-           padding: 0;
-         }
-     }
-     > ul {
-       grid-auto-flow: column;
-    
-       > li {
-         margin: 0 0.5rem;
-       }
-     }
-    
-  }
   #nav {
     opacity: 0;
     height: 0;
     width: 0;
     position: absolute;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 2rem;
-    a {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    a, .langbutt {
       font-family: EB Garamond, 'Crimson Text', serif;
       text-transform: uppercase;
       font-style: italic;
@@ -80,13 +133,20 @@
   }
 
   &.active {
-    position: fixed;
-    height: 100%;
+    position: absolute;
+    min-height: 100%;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: $bgcolor;
     transition: background-color 0.5s;
+    #bg {
+      background-color: $bgcolor;
+      height: 100vh;
+      width: 100vw;
+      z-index: 0;
+      position: fixed;
+    }
     .burger {
       position: fixed;
       margin-left: -10px;
@@ -113,21 +173,34 @@
       height: 0;
       opacity: 0;
     }
-    a {
+    a, .langbutt {
       display: block;
-      padding: 50px;
       font-size: 24pt;
     }
     #nav {
-      display: block;
-      padding: 0;
-      margin: auto 0;
+      display: flex;
+      padding-left: 10vw;
+      padding-bottom: 2rem;
+      margin: 0;
       opacity: 1;
       position: relative;
       width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
       height: auto;
+
+    }
+    @include md {
+      #nav {
+        min-height: 800px;
+        margin: auto;
+        a, .langbutt {
+          font-size: 36pt;
+        }
+      }
     }
   }
+  
 
   @include lg {
     display: block;
@@ -138,6 +211,23 @@
       height: 0;
       padding: 0;
     }
+  }
+}
+.language.active {
+      #langswitcher {
+          margin: auto 0;
+          min-height: 300px;
+          justify-content: space-between;
+          a {
+            padding-left: 0px;
+          }
+      }
+    @include md {
+      #langswitcher {
+          margin: auto 0;
+          justify-content: space-between;
+          min-height: 500px;
+      }
   }
 }
 

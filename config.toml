@@ -1,95 +1,99 @@
 baseURL = "https://www.pauljwschauenburg.com/"
 title = "Paul J.W. Schauenburg"
 defaultContentLanguage = 'en'
+enableMissingTranslationPlaceholders = true
 [languages]
-    [languages.en]
-		languageName = "EN"
-		[languages.en.menu]
-		[[languages.en.menu.main]]
-			identifier ="homepage"
-			name = "P.J.W.S."
-			url = "/"
-			weight = 1
-			[languages.en.menu.main.params]
-				activename = "Home"
-		[[languages.en.menu.main]]
-			identifier ="media"
-			name = "Media"
-			url = "/media/"
-			weight = 2
-		[[languages.en.menu.main]]
-			name = "About"
-			url = "/about/"
-			weight = 3
-		[[languages.en.menu.main]]
-			identifier ="events"
-			name = "Events"
-			url = "/events/"
-			weight = 4
-		[[languages.en.menu.main]]
-			identifier ="blog"
-			name = "Contact"
-			url = "/contact/"
-            weight = 5
-	[languages.de]
-		languageName = "DE"
-		[languages.de.menu]
-		[[languages.de.menu.main]]
-			identifier ="homepage"
-			name = "P.J.W.S."
-			url = "/"
-			weight = 1
-			[languages.de.menu.main.params]
-				activename = "Startseite"
-		[[languages.de.menu.main]]
-			identifier ="media"
-			name = "Medien"
-			url = "/media/"
-			weight = 2
-		[[languages.de.menu.main]]
-			name = "Biographie"
-			url = "/about/"
-			weight = 3
-		[[languages.de.menu.main]]
-			identifier ="events"
-			name = "Events"
-			url = "/events/"
-			weight = 4
-		[[languages.de.menu.main]]
-			identifier ="blog"
-			name = "Kontakt"
-			url = "/contact/"
-			weight = 5
-    [languages.nl]
-        languageName = "NL"
-        [languages.nl.menu]
-        [[languages.nl.menu.main]]
-            identifier = "homepage"
-            name = "P.J.W.S."
-            url = "/"
-            weight = 1
-            [languages.nl.menu.main.params]
-                activename = "Startpagina"
-        [[languages.nl.menu.main]]
-            identifier = "media"
-            name = "Media"
-            url = "/media/"
-            weight = 2
-        [[languages.nl.menu.main]]
-            name = "Biografie"
-            url = "/about/"
-            weight = 3
-		[[languages.nl.menu.main]]
-			identifier ="events"
-			name = "Evenementen"
-			url = "/events/"
-			weight = 4
-        [[languages.nl.menu.main]]
-            identifier = "blog"
-            name = "Contact"
-            url = "/contact/"
-            weight = 5
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/en"
+    [languages.en.menu]
+    [[languages.en.menu.main]]
+      identifier ="homepage"
+      name = "P.J.W.S."
+      url = "/"
+      weight = 1
+      [languages.en.menu.main.params]
+        activename = "Home"
+    [[languages.en.menu.main]]
+      identifier ="media"
+      name = "Media"
+      url = "/media/"
+      weight = 2
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/about/"
+      weight = 3
+    [[languages.en.menu.main]]
+      identifier ="events"
+      name = "Events"
+      url = "/events/"
+      weight = 4
+    [[languages.en.menu.main]]
+      identifier ="blog"
+      name = "Contact"
+      url = "/contact/"
+      weight = 5
+  [languages.de]
+    languageName = "Deutsch"
+    contentDir = "content/de"
+    [languages.de.menu]
+    [[languages.de.menu.main]]
+      identifier ="homepage"
+      name = "P.J.W.S."
+      url = "/"
+      weight = 1
+      [languages.de.menu.main.params]
+        activename = "Startseite"
+    [[languages.de.menu.main]]
+      identifier ="media"
+      name = "Medien"
+      url = "/media/"
+      weight = 2
+    [[languages.de.menu.main]]
+      name = "Biographie"
+      url = "/about/"
+      weight = 3
+    [[languages.de.menu.main]]
+      identifier = "events"
+      name = "Events"
+      url = "/events/"
+      weight = 4
+    [[languages.de.menu.main]]
+      identifier ="blog"
+      name = "Kontakt"
+      url = "/contact/"
+      weight = 5
+  [languages.nl]
+    languageName = "Nederlands"
+    contentDir = "content/nl"
+    [languages.nl.menu]
+    [[languages.nl.menu.main]]
+      identifier = "homepage"
+      name = "P.J.W.S."
+      url = "/"
+      weight = 1
+      [languages.nl.menu.main.params]
+        activename = "Startpagina"
+      [[languages.nl.menu.main]]
+        identifier = "media"
+        name = "Media"
+        url = "/media/"
+        weight = 2
+      [[languages.nl.menu.main]]
+        name = "Biografie"
+        url = "/about/"
+        weight = 3
+      [[languages.nl.menu.main]]
+        identifier = "events"
+        name = "Evenementen"
+        url = "/events/"
+        weight = 4
+      [[languages.nl.menu.main]]
+        identifier = "blog"
+        name = "Contact"
+        url = "/contact/"
+        weight = 5
 [params]
-	cutoff = 30
-	author = "Paul Schauenburg"
+  cutoff = 30
+  author = "Paul Schauenburg"
 

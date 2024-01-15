@@ -1,7 +1,8 @@
 <div class="nav" id="menu">
-	<div class="logo">
-		<span>Paul Schauenburg</span>
+	<div class="logo textholder">
+		<span>P.J.W.S.</span>
 	</div>
+        <div id="bg"></div>
 	<div class="burger">
 	<button id="menu-button" onclick=menuOnClick() class="hamburger hamburger--squeeze" type="button">
 		<span class="hamburger-box">
@@ -17,12 +18,12 @@
 				   class="active"
 			   {{ end }}
 			>
-			<span class="menu-text">
+			<span class="menu-text textholder">
 				{{ cond (and ($currentPage.IsMenuCurrent "main" .) (isset .Params "activename")) .Params.activename .Name }}
 			</span>
 			</a>
 		{{ end }}
-                {{/* partial "language-switcher.html" . */}}
+        {{ partial "language-switcher.html" . }}
 	</nav>
 </div>
 
