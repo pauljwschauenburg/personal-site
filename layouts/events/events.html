@@ -12,15 +12,15 @@
 		</div>
 	</div>
 	{{ end }}
-	{{ range .Pages }}
+	{{ range sort .Pages "Params.eventdate" }}
 	<div style="margin: 80px auto; text-align: left;" class="textholder">
 		<div style="text-align: center">
 			<img src={{.Params.Image}} class="event-img" />
 		</div>
-		<h1 class="title" style="margin-bottom: 5px; font-style: normal">{{.Title}}</h1>
-		<h3 style="margin-top: 0; margin-bottom: 0px;">{{.Params.Ensemble}}</h3>
-		<h3 style="font-style: normal; text-align: right; margin-bottom: 5px; margin-top: 0;">{{.Params.Location}}</h3>
-		<h2 class="title" style="font-style: normal; text-align: right"><a href={{.Params.Tickets}}>Tickets</a></h2>
+		<h1 class="title" style="margin-bottom: 5px; font-style: normal">{{.Title | htmlUnescape}}</h1>
+		<h3 style="margin-top: 0; margin-bottom: 0px;">{{.Params.Ensemble | htmlUnescape | safeHTML }}</h3>
+		<h3 style="font-style: normal; text-align: right; margin-bottom: 5px; margin-top: 0;">{{.Params.Location | htmlUnescape}}</h3>
+        {{ if .Params.Tickets }} <h2 class="title" style="font-style: normal; text-align: right"><a href={{.Params.Tickets}}>Tickets</a></h2> {{ end }}
 	</div>
 	{{end}}
 </div>

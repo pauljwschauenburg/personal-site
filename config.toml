@@ -55,7 +55,7 @@ enableMissingTranslationPlaceholders = true
       weight = 3
     [[languages.de.menu.main]]
       identifier = "events"
-      name = "Events"
+      name = "Konzerte"
       url = "/events/"
       weight = 4
     [[languages.de.menu.main]]
